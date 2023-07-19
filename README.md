@@ -1,4 +1,4 @@
-![Grão Uai](./public/Banner.png)
+![Grão Uai](grao-uai/public/Banner.png)
 
 
 O Grão Uai é um projeto simples em React que nós desenvolvemos para demonstrar de forma prática o uso básico do `Docker`. Com o Docker, conseguimos criar um ambiente isolado para o projeto, facilitando a configuração e a execução da aplicação. Além disso, o Docker nos permitiu compartilhar facilmente o projeto, garantindo que todos tenham um ambiente de desenvolvimento consistente.
