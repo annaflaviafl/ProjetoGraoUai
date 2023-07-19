@@ -1,0 +1,21 @@
+.cardBackground {
+    background-color: #FFFFFF40;
+    border-radius: 12px;
+    margin: 12px;
+}
+
+
+.card img {
+    padding: 12px;
+}
+
+.name {
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.price {
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin-bottom: 0.5vw;
+}
