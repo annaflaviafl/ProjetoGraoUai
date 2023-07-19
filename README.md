@@ -34,8 +34,23 @@ docker build -t nome_da_imagem .
 ```
 docker run -p 3000:3000 nome_da_imagem
 ```
+5. Logar na sua conta do docker, para conseguir publicar a imagem:
 
-5. Agora é só executar a sua imagem a partir do menu de containers no Docker.
+```
+docker login
+```
+
+6. Execute o comando para definir uma tag para a imagen:
+
+```
+docker tag nome_imagem nome_do_hub/nome_imagem
+```
+7. Agora é só executar o push com o seguinte comando para subir a sua imagem para o docker hub:
+
+```
+docker push nome_do_hub/nome_imagem
+```
+Agora sera capaz de baixar a imagem pelo diretorio do docker e execuar em qualquer outro computador.
 
 # Tecnologias
 
@@ -44,7 +59,10 @@ docker run -p 3000:3000 nome_da_imagem
 ![DOCKER](https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 # Referencias
-
+* [O mínimo que você precisa saber sobre Docker!](https://youtu.be/ntbpIfS44Gw)
+* [Guia de iniciante do Docker](https://docs.docker.com/get-started/)
+* [Docker Documentation](https://docs.docker.com/reference/)
+* [Chat GPT](https://chat.openai.com/)
 # Autores
 
 <table style="width: 100%;">
