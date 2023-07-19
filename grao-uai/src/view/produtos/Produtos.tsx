@@ -48,7 +48,7 @@ const Produtos: React.FC<Props> = ({ service }) => {
                     </span>
                     <span className="card">
                         {products?.map((product) =>
-                            <Card srcImage={product.Image} name={product.Name} price={product.Price} />
+                            <Card key={product.Name} srcImage={product.Image} name={product.Name} price={product.Price} />
                         )}
                     </span>
                 </>

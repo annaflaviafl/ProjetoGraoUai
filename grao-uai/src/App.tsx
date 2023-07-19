@@ -1,24 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import FindProductService from './domain/services/findProdutoService';
+import { FakeProdutoRepository } from './data/fake/fakeProdutoRepository';
+import Home from './view/home/Home';
 
-function App() {
+const App: React.FC = () => {
+  const createProductService = () => {
+    return new FindProductService(new FakeProdutoRepository());
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Home service={createProductService()} />
     </div>
   );
 }
