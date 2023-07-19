@@ -31,7 +31,7 @@ a:link:hover {
     font-weight: 600;
 }
 
-.aImg {
+.aImg:link {
     display: flex;
     margin: 0;
 }
